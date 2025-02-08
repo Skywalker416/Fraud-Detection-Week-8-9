@@ -46,12 +46,6 @@ This project enhances skills in:
 ## Project Team
 - Team members are responsible for different aspects, including data preprocessing, model development, and deployment.
 
-## Key Dates
-| Milestone                          | Deadline |
-|-------------------------------------|-----------|
-| Data Cleaning & Preprocessing       | Week 8    |
-| Feature Engineering & Model Training | Week 9    |
-| Model Evaluation & Deployment       | Week 10   |
 
 ## Deliverables
 - **Task 1: Data Analysis and Preprocessing**

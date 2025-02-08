@@ -95,4 +95,4 @@ Contributions are welcome! Please follow these steps:
 This project is licensed under the MIT License.
 
 ## Contact
-For any inquiries, contact [Your Name] at [Your Email] or visit [Your GitHub Profile].
+For any inquiries, contact Amanuel Legesse at Ese.amanuel.legesse@gmail.com 

@@ -1,11 +1,11 @@
 import pandas as pd
 
 def load_data(filepath: str) -> pd.DataFrame:
-    """Load transaction data from a CSV file."""
+    """Load dataset from CSV."""
     return pd.read_csv(filepath)
 
-def preprocess_data(df: pd.DataFrame) -> pd.DataFrame:
-    """Perform necessary data cleaning and transformations."""
+def clean_data(df: pd.DataFrame) -> pd.DataFrame:
+    """Clean and preprocess the dataset."""
     df = df.drop_duplicates()
-    df.fillna(method="ffill", inplace=True)
+    df.fillna(method='ffill', inplace=True)
     return df

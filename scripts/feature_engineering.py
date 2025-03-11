@@ -1,13 +1,14 @@
+import pandas as pd
 from sklearn.preprocessing import StandardScaler
 
 def create_features(df: pd.DataFrame) -> pd.DataFrame:
-    """Generate new features for fraud detection."""
-    df['amount_log'] = np.log1p(df['amount'])
+    """Generate additional features for fraud detection."""
     df['hour'] = pd.to_datetime(df['timestamp']).dt.hour
+    df['amount_log'] = df['amount'].apply(lambda x: np.log1p(x))
     return df
 
-def scale_features(df: pd.DataFrame, feature_cols: list) -> pd.DataFrame:
-    """Scale numeric features for better model performance."""
+def scale_features(df: pd.DataFrame, features: list) -> pd.DataFrame:
+    """Scale numerical features."""
     scaler = StandardScaler()
-    df[feature_cols] = scaler.fit_transform(df[feature_cols])
+    df[features] = scaler.fit_transform(df[features])
     return df
